@@ -1,0 +1,174 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e6f4ea;
+  color: #1a202c;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background-color: #bbf7d0;
+  padding: 3rem 1rem;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #065f46;
+  margin-bottom: 1rem;
+}
+
+header p {
+  max-width: 900px;
+  margin: 0 auto 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* Buttons */
+button {
+  background-color: #059669;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin: 0.5rem;
+}
+
+button:hover {
+  background-color: #047857;
+}
+
+/* Main Sections */
+main section {
+  margin-bottom: 3rem;
+  padding: 2rem 1rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+#services {
+  background-color: #d1fae5;
+  text-align: center;
+}
+
+/* Headings */
+h2 {
+  font-size: 2rem;
+  color: #047857;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #047857;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #065f46;
+  margin-bottom: 0.5rem;
+}
+
+/* Paragraphs */
+p {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+/* Badge/Skill Tags */
+.badge {
+  display: inline-block;
+  background-color: #065f46; /* Darker green background */
+  color: #ecfdf5; /* Light greenish white text for contrast */
+  padding: 0.4rem 0.8rem;
+  margin: 0.3rem 0.3rem 0 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 6px;
+  border: 1px solid #047857;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.badge:hover {
+  background-color: #047857;
+  transform: scale(1.05);
+  cursor: default;
+}
+
+
+/* Testimonial Cards */
+#reviews > div > div {
+  background-color: #f0fdf4;
+  padding: 1rem;
+  border-left: 5px solid #22c55e;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+#reviews h3 {
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background-color: #bbf7d0;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 4rem;
+}
+
+footer img {
+  width: 60px;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+footer p {
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: #065f46;
+  display: inline-block;
+}
+
+footer a:hover {
+  color: #047857;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .badge {
+    display: block;
+    margin-bottom: 6px;
+  }
+}
